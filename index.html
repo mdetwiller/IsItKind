@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      Bernard Meltzer wisdom applied for talking to yourself
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      Style and interaction heavily cribbed from emma rae norton's scrolling lecture on the
+      computer mouse: https://inbetweenhumansandcomputers.net/scrolling-lecture/
+    -->
+    <title>Is it helpful?</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+
+  </head>
+  
+  <body>
+    <div id="floating-box">
+    </div>
+    <div class="breath-in">
+      <div class="left">
+        <div class="slide">
+          <p class="text"><span>by maya</span>for talking to yourself and finding the question your looking for</p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>1.</span>Type a thought you'd like to interrogate<textarea class="styled-input" rows="1" id="thought1" name="thought1"></textarea><span class="scroll">scroll on the right</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>4.</span><textarea class="styled-input" rows="1" id="thought1-true" name="thought1-true"></textarea><span class="scroll">rewrite then scroll down on this side</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span> 5.</span>Is it kind?<span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>8.</span><textarea class="styled-input" rows="1" id="thought1-kind" name="thought1-kind"></textarea><span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>10.</span>Can you rewrite it to more closely meet what you need?<span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>12.</span><span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide m lg">
+            <p class="text"><span>14.</span><span class="scroll">scroll down</span></p>
+            <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/LeftColumn.png?v=1720373259547">
+        </div>
+        <div class="slide">
+          <p class="text"><span>15.</span>Is it helpful?<span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>17.</span><textarea class="styled-input" rows="3" id="thought1-need" name="thought1-need">Thing 1: 
+Thing 2: 
+Thing 3: </textarea><span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide m lg">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/leisure.jpg?v=1717989688132">
+          <p class="text"><span>19.</span><textarea class="styled-input" rows="2" id="thought1-like" name="thought1-lik">Thing 1: 
+Thing 2: </textarea><span class="scroll">scroll right</span></p>
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/three-friend-plant.png?v=1719198294379">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/two-year-anniversary.png?v=1719198304065">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/one.jpg?v=1719198283617">
+        </div>
+        <div class="slide">
+          <p class="text"><span>21.</span>and breath out<span class="scroll">scroll right</span></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="slide">
+          <p class="text"><span class="scroll">scroll down on the left</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>2.</span>Is it true?<span class="scroll">scroll down on this side</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span> 3.</span>Can you rewrite it to feel more true?<span class="scroll">scroll left</span>
+            <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/72c21004-6a7b-415a-a6eb-0b6045137330-jpg.png?v=1717988652575">
+          </p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>6.</span>Click on the practice guide<span class="scroll">when you come back, scroll down </span>
+            <a href="https://practice-guide.glitch.me/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/Screenshot%202024-06-09%20at%2011.06.17%E2%80%AFPM.png?v=1717988785123"></a>
+          </p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>7.</span>Can you write it to be more kind?<span class="scroll">scroll left</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>9.</span>Is it necessary?<span class="scroll">scroll left</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>11.</span><textarea class="styled-input" rows="1" id="thought1-need" name="thought1-need"></textarea><span class="scroll">scroll left</span></p>
+        </div>
+        <div class="slide m lg">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/RightColumn.jpeg?v=1720373263402">
+          <p class="text"><span>13.</span><span class="scroll">scroll left</span></p>
+          </div>
+        <div class="slide">
+          <p class="text"><span>16.</span>Can you write 3 things that could be helpful?<span class="scroll">scroll left</span>
+            <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/untitled.png?v=1717988930902">
+          </p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>18.</span>Can you write 2 things that you like?<span class="scroll">scroll left</span></p>
+        </div>
+        <div class="slide">
+          <p class="text"><span>20.</span>Can you breath in?<span class="scroll">scroll left</span>
+            <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/original_a5bac29d9d54b920193d5341a4ad8997.png?v=1719201370094">
+          </p>
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/original_d61701766c61be622b34861068cbc8f3.png?v=1720377270563">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/two-two-two.jpg?v=1719198300247">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/one-of-many.png?v=1719198276747">
+        </div>
+        <div class="slide m lg">
+          <img src="https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/arhaus.jpg?v=1719198679454">
+          <p class="text">fin.</p>
+        </div>
+      </div>
+    </div>
+    <!--<div class="back-up">
+      <button id="back-to-top" onclick="scrollToTop()">Run Again</button>
+    </div>
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+    <footer class="footer">
+      <div class="links"></div>
+      <a
+        class="btn--remix"
+        target="_top"
+        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
+      >
+        <img
+          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
+          alt=""
+        />
+        Remix on Glitch
+      </a>
+    </footer>
+  </body>
+</html>

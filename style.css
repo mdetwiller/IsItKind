@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "wremena";
+    src: url("https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/wremena.regular.otf?v=1717969307547"),
+      url("https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/wremena.regular.otf?v=1717969307547")
+        format("otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "homemade-apple";
+    src: url("https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/HomemadeApple-Regular.ttf?v=1717983670444"),
+      url("https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/HomemadeApple-Regular.ttf?v=1717983670444")
+        format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blockstepped";
+    src: url("https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/Blockstepped.ttf?v=1720895411917"), 
+      format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "rosesare";
+    src: url("https://cdn.glitch.global/edbcad82-f2a9-43c6-9760-3f27bf6262fd/RosesareFF0000.ttf?v=1720896022681"),
+      format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* BROWSER SIZE 1317 x 795 */
+  /* BROWSER SIZE 2634 x 1590 */
+  html {
+    box-sizing: border-box;
+    /*cursor: none;*/
+  }
+  
+  body {
+    /*font-family: "wremena", serif;*/
+    font-family: "rosesare", serif;
+    background-color: #f2f1ed;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    margin: 0;
+    color: #004466;
+    padding: 0;
+    /* cursor: none; */
+  }
+  
+  #floating-box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f2f1ed;
+    color: #b8ab8f;
+    font-size: 1.2em;
+    z-index: 1000;
+    text-align: center;
+    font-family: "homemade-apple", serif;
+  }
+  
+  div.back-up {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.breath-in {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left,
+  .right {
+    height: 100vh;
+    width: 50%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .left { z-index: 10; }
+  .right { z-index: 8; }
+  
+  .left::-webkit-scrollbar,
+  .right::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  
+  .slide {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 50vh;
+  }
+  
+  .left .slide { justify-content: flex-end; }
+  
+  .right .slide { justify-content: flex-start; }
+  
+  .slide p { margin: 0; font-size: 3em;}
+  
+  .slide p.lg { font-size: 1.35em;}
+  
+  .slide p.lg em { font-size: 1.8675em; }
+  
+  .left .slide p { padding-right: 65px; }
+  
+  .right .slide p { padding-left: 65px;}
+  
+  .slide img {
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      max-width: 85%;
+      max-height: 85%;
+    }
+  }
+  
+  .slide.m.med img {
+    width: 65%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+      height: 65%;
+    }
+  }
+  
+  .slide.m.lg img {
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+      height: 80%;
+    }
+  }
+  
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  p.text {
+    /*font-size: 0.8675em;*/
+    font-size: 3em;
+    line-height: 1em;
+    padding: 10px !important;
+  }
+  
+  p.text span {
+    font-family: "rosesare", serif;
+    display: block;
+    margin-bottom: 4px;
+    /*font-size: 0.675em;*/
+    font-size: 0.5em;
+  }
+  p.text span.scroll {
+    margin: 8px;
+    font-style: italic;
+    font-size: 0.525em;
+    letter-spacing: 0.03em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    p.text {
+      /*font-size: 1.325em;*/
+      font-size: 2em;
+      padding-right: 20px !important;
+      padding-left: 20px !important;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .slide img {
+      width: auto;
+      max-width: 85%;
+      max-height: 85%;
+    }
+  
+    .slide.m.med img {
+      width: auto;
+      height: 65%;
+    }
+  
+    .slide.m.lg img {
+      width: auto;
+      height: 80%;
+    }
+  }
+  
+  .styled-input {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide scrollbar */
+    resize: none; /* Prevent manual resizing */
+  }
+  
+  .left .styled-input {
+    margin-right: 65px; /* Align with the text padding */
+  }
+  
+  .right .styled-input {
+    margin-left: 0px; /* Align with the text padding */
+  }
+  
